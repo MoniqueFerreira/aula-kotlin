@@ -1,0 +1,51 @@
+/**
+ * We declare a package-level function main which returns Unit and takes
+ * an Array of strings as a parameter. Note that semicolons are optional.
+ */
+
+
+/**fun foo(name: String, number: int 42, toUpperCase: Boolean = false)=
+(if(toUpperCase)name.toUpperCase() else name) + number*/
+
+fun soma(n1: Int, n2: Int, n3: Int, n4: Int): Int = 
+    n1+n2+n3+n4
+
+fun mult(n1: Int, n2: Int, n3: Int = 1, n4: Int = 1): Int =
+n1*n2+n3+n4
+
+fun main(args: Array<String>) {
+    println(soma(n1= 1, n2= 3, n3= 8, n4= 9))
+    println(mult(n1= 1, n2 = 10))
+    println(mult(n1= 1, n2 = 10, n3= 9))
+    
+if(soma(6, 5, 8, 1)/4 >=7) {
+println("Passou")
+}   
+else {
+println("Reprovado")
+}
+when(10) {
+    1->print("x = 1")
+    2->print("x = 2")
+    else->{//note the block
+    	println("X não é 1 e nem 2")
+    }
+}
+
+
+/**for(item in lista) println(item)
+for(item: Int in ints) {
+}*/
+
+for(i in 1..5){
+    println(i)
+}   
+    
+for (i in 20 downTo 2 step 4) {
+   println("Ok")
+}
+fun Int.Par() = this %2 ==0
+fun String.removeEspaco() = this.replace(" ","")
+}
+
+
